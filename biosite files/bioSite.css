@@ -1,0 +1,49 @@
+html, body {
+	font-family: Georgia, serif;
+	margin: .5%;
+}
+
+body {
+	background-color: black;
+}
+h1 {
+	font-family: "Lucida Handwriting", serif;
+	color: #8C456C;
+}
+
+h2 {
+	font-family: Georgia, serif;
+	color: #BF9AE0;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: Georgia, serif;
+	color: #698EBF;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+p {
+	font-size: 16px;
+	font-family: Georgia, serif;
+	color: #000000;
+}
+
+
+figcaption {
+	font-size: .75em;
+	font-family: Georgia, serif;
+	font-style: italic; 
+	color: #FFFFFF;
+}
+
+a {
+	text-decoration: underline;
+}
+
+p {
+	margin: 1px;  
+}
