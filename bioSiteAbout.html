@@ -15,9 +15,27 @@
 			.myDiv2 a {
 				text-decoration: none;
 			}
+			.container {
+   				display: flex; 
+    			align-items: flex-start; 
+    			gap: 2%; 
+    			flex-wrap: nowrap;
+    			width: 100%; 
+			}
+
 			.portrait1 {
-				float: left;
-				width: 100%;
+				margin-right: 2%;
+				width: 50%;
+			}
+			
+			.portrait1 img {
+    			width: 100%; 
+    			display: block; 
+			}
+
+			
+			.body {
+				width: 50%;
 			}
 		</style>
 		<title>bioSite About Page</title>
@@ -39,14 +57,16 @@
 				</h1>
 			</div>
 		</header>
-	
-		<div class="portrait1=">
-			<figure>
-  				<img src="file:///Users/Liz/Downloads/IMG_3818.jpg" alt="McKenzie" style="width:50%">
-			</figure>
-		</div>
-		<h2>About McKenzie</h2>
-			<p> McKenzie Deterding is 26 years old and a resident of Nebraska. She attended Kearney High School and graduated in 2017. 
+		<main>
+			<div class="container">
+				<div class="portrait1">
+					<figure>
+  						<img src="file:///Users/Liz/Downloads/IMG_3818.jpg" alt="McKenzie" style="width:100%">
+					</figure>
+				</div>
+				<div class="body">
+					<h2>About McKenzie</h2>
+						<p> McKenzie Deterding is 26 years old and a resident of Nebraska. She attended Kearney High School and graduated in 2017. 
 		Throughout all of high school, she was employed as a waitress often working on weekends. After graduation, she continued 
 		waitressing for a few years before accepting a job for billing and dispatching. She studied at Central Community College 
 		in Kearney during this time, earning an Associate of Applied Science Degree in Business Administration in 2020. She was 
@@ -59,6 +79,9 @@
 		She is a big fan of Legos and proudly displays them around her home. She can ski, rollerblade, and swim, and recently, she got 
 		into golf and really found her stride. She looks forward to continuing to build connections in her current industry and with 
 		others of interest. </p>
+				</div>
+			</div>
+		</main>
 		<footer>
 			<h5> <a href="file:///Users/Liz/bioSite/bioSite.html">Home Page </a> </h5>
 		</footer>
