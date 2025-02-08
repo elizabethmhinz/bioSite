@@ -14,8 +14,7 @@ h1 {
 h2 {
 	font-family: Georgia, serif;
 	color: #BF9AE0;
-	font-size: 20px;
-	text-align: center;
+	font-size: 22px;
 	font-weight: bold;
 }
 
@@ -25,6 +24,14 @@ h3 {
 	font-size: 18px;
 	font-weight: normal;
 }
+
+h5 {
+	font-family: Georgia, serif;
+	color: #698EBF;
+	font-size: 14px;
+	font-weight: normal;
+}
+
 
 p {
 	font-size: 16px;
