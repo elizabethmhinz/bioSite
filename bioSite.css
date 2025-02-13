@@ -53,3 +53,21 @@ a {
 p {
 	margin: 1px;  
 }
+
+footer {
+	position: fixed; 
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+	bottom: 0;
+}
+
+footer a {
+	margin-right: 7px;
+	
+}
+
+a:visited {
+	color: none;
+}
