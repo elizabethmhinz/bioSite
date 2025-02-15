@@ -3,6 +3,23 @@
 <html lang="en">
 	<head>
 		<style>
+			.header-text {
+				grid-column: 2 / 4;
+				grid-row: 2 ;
+				text-align: center;
+				size: 40px;
+			}	 
+			header {
+   				width: 100%;
+    			height: 100px;
+    			display: flex;
+    			align-items: center;
+			}
+			body, html {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
 			.sitename {
 				width: 35%;
 				float: left;
@@ -15,20 +32,25 @@
 			.menu a {
 				text-decoration: none;
 			}
+			
+			main {
+    			display: block;
+    			margin-top: 10px;
+			}
 
       	  	.grid-container {
           	 	 display: grid;
-          	 	 grid-template-columns: 2fr 1fr 1fr;
+          	 	 grid-template-columns: 3fr 1fr 1fr;
           	 	 grid-template-rows: auto auto;
           	 	 gap: 20px;
           	 	 padding: 20px;
           	 	 align-items: start;
-
+          	 	 min-height: 600px;
+          	 	 
          	 }
        		.grid-container img {
           		 width: 100%;
           	 	 height: auto;
-
        		 }
 			.large-image {
 				grid-column: 1;
@@ -46,12 +68,6 @@
 				gap: 10px;
 
 			}
-			.header-text {
-				grid-column: 2 / 4;
-				grid-row: 2 ;
-				text-align: center;
-			}	 
-			
 		</style>
 		<title>bioSite Home Page</title>
 		<link href="bioSite.css" type="text/css" rel="stylesheet">
@@ -61,7 +77,7 @@
 	<body>
 		<header>
 			<div class="sitename">
-				<h2>McKenzie Deterding</h2>
+				<h1>McKenzie Deterding</h1>
 			</div>
 			<div class="menu">
 				<h1>
@@ -77,7 +93,7 @@
             	<img src="bioSitePictures/IMG_3819.jpg" class="large-image" alt="McKenzie">
             	<img src="bioSitePictures/radio_camera.png" class="small-image-2" alt="Lego Radio">
                 <img src="bioSitePictures/flower.png" class="small-image" alt="Lego Flowers">
-            	<h1>Mckenzie         Deterding</h1>
+            	<h1>McKenzie         Deterding</h1>
         	</div>
 		</main>
 		<footer>
