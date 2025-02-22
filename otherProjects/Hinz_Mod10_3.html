@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Web Development with HTML and CSS</title>
+		<link href="Hinz_Mod10_3.css" type="text/css" rel="stylesheet">
+		<meta name= "class" content="CSD 340 Web Development with HTML and CSS">
+		<meta name= "student" content="Liz Hinz">
+		<meta name= "assignment" content="Module 10.3 Assignment">
+	<style>
+       	div img {
+          	width: 50%;
+          	height: 50%;
+       	}
+    </style> 
+    
+    <script>
+      	function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+    	</script>
+  	</head>
+	<body>
+		<h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <br>
+    	<div>
+    		<a href=#
+    		onmouseover="iceberg.src='iceberg.jpg';"
+    		onmouseout= "iceberg.src='iceberg_2.jpg';">
+       		<img alt="iceberg" id = "iceberg" src = "iceberg.jpg">
+      		</a>
+    	</div>
+    	<br>
+    	<div
+         	onmouseover="this.style.color='blue';"
+         	onmouseout= "this.style.color='black';">
+      		Run your mouse over the image to change.
+      	<br>
+    	</div>
+   		<div>
+      		<a href=#
+         	onmouseover="bigdipper.src='bigdipper.jpg';"
+         	onmouseout= "bigdipper.src='bigdipper_2.jpg';">
+        	<img alt="bigdipper" id = "bigdipper" src = "bigdipper.jpg">
+      		</a>
+    	</div>
+    	<br>
+    	<div
+         	onmouseover="this.style.color='blue';"
+         	onmouseout= "this.style.color='black';">
+      		Run your mouse over the image to change.
+      		<br>
+      		Right-click and select View Source for more details.
+    	</div>
+  	</body>
+</html>
