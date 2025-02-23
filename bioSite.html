@@ -9,35 +9,27 @@
 				text-align: center;
 				size: 40px;
 			}	 
-			header {
-   				width: 100%;
-    			height: 100px;
-    			display: flex;
-    			align-items: center;
-			}
+
 			body, html {
 				height: 100%;
 				margin: 0;
-				padding: 0;
 			}
 			.sitename {
-				width: 35%;
+				width: 40%;
 				float: left;
 			}
 			.menu {
-				width: 65%;
+				width: 60%;
 				float: right;
 				text-align: right;
 			}
 			.menu a {
 				text-decoration: none;
 			}
-			
 			main {
     			display: block;
     			margin-top: 10px;
 			}
-
       	  	.grid-container {
           	 	 display: grid;
           	 	 grid-template-columns: 3fr 1fr 1fr;
@@ -46,7 +38,9 @@
           	 	 padding: 20px;
           	 	 align-items: start;
           	 	 min-height: 600px;
-          	 	 
+         	 }
+         	 h3 {
+         	  	white-space: nowrap;
          	 }
        		.grid-container img {
           		 width: 100%;
@@ -65,8 +59,6 @@
 			.small-image {
 				grid-column: 3;
 				grid-row: 1;
-				gap: 10px;
-
 			}
 		</style>
 		<title>bioSite Home Page</title>
@@ -80,12 +72,7 @@
 				<h1>McKenzie Deterding</h1>
 			</div>
 			<div class="menu">
-				<h1>
-					<a href="bioSite.html">Home   </a> 
-					<a href="bioSiteAbout.html"> About   </a>
-					<a href="bioSiteAccomplishments.html"> Accomplishments   </a>
-					<a href="bioSiteHobbies.html"> Hobbies</a>
-				</h1>
+				<h2><a href="bioSite.html">Home   </a> <a href="bioSiteAbout.html"> About   </a><a href="bioSiteAccomplishments.html"> Accomplishments   </a><a href="bioSiteHobbies.html"> Hobbies</a></h2>
 			</div>
 		</header>
 		<main>
@@ -93,8 +80,7 @@
             	<img src="bioSitePictures/IMG_3819.jpg" class="large-image" alt="McKenzie">
             	<img src="bioSitePictures/radio_camera.png" class="small-image-2" alt="Lego Radio">
                 <img src="bioSitePictures/flower.png" class="small-image" alt="Lego Flowers">
-            	<h1>McKenzie         Deterding</h1>
-        	</div>
+                <h3>McKenzie Deterding</h3> 
 		</main>
 		<footer>
 			<a href="bioSite.html">Home Page</a> 
