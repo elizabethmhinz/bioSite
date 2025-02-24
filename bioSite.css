@@ -4,10 +4,6 @@ html, body {
 	margin: 1%;
 }
 
-main {
-    flex: 1; /* Makes the content area take up remaining space */
-}
-
 header {
    	width: 100%;
     height: 100px;
@@ -18,7 +14,7 @@ header {
 h1 {
 	font-family: "Brush Script MT", serif;
 	color: #8C456C;
-	font-size: 45px;
+	font-size: 39px;
 	font-weight: bold;
 }
 
@@ -32,8 +28,9 @@ h2 {
 h3 {
 	font-family: "Brush Script MT", serif;
 	color: #698EBF;
-	font-size: 45px;
+	font-size: 35px;
 	font-weight: bold;
+	padding-right: 10px;
 }
 
 p {
@@ -61,15 +58,12 @@ footer {
 	text-align: center;
 	color: #698EBF;
 	padding: 10px 0;
-	margin-top: 20px; /* Adds spacing above the footer */
-
-	
+	margin-top: 20px; 
 }
 
 footer a {
 	margin-right: 7px;
 	color: #698EBF; 
-
 }
 
 a:visited {
