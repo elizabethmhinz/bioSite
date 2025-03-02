@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Web Development with HTML and CSS</title>
+		<meta name= "class" content="CSD 340 Web Development with HTML and CSS">
+		<meta name= "student" content="Liz Hinz">
+		<meta name= "assignment" content="Module 11.2 Assignment">
+
+    	<script>
+    		var toDoList = [];
+    
+    		function addFunction() {
+  				var item = document.getElementById("myText").value;
+  				if (item) {
+  					toDoList.push(item);
+  					var position = toDoList.length; // didn't add -1 length so the first item returns as 1 instead of 0
+  					alert("Item: " + item + " Added as Item " + position);
+  					document.getElementById("myText").value=" ";
+  				}
+			}
+    		function deleteFunction() {
+    			toDoList.pop();
+			}
+    		function displayFunction() {
+    			var displayDiv = document.getElementById("displayToDoList");
+    			displayDiv.innerHTML = "";	
+				
+				var ol = document.createElement("ol");
+				toDoList.forEach(item => {
+					var li = document.createElement("li");
+					li.textContent = item;
+					ol.appendChild(li);
+				});
+				displayDiv.appendChild(ol);
+			}
+
+    	</script>
+  	</head>
+	<body>
+		<h1>Assignment 11.2: JavaScript - Part 3</h1><br>
+		<input type="text" id="myText" placeholder="Write something..">
+  	  	<button id="add" onclick="addFunction()">Add</button>
+  	  	<button id="delete" onclick="deleteFunction()">Delete Last Entry</button>
+  		<button id="display" onclick="displayFunction()">Display</button>
+  		<div id="displayToDoList"></div>
+  	</body>
+</html>
