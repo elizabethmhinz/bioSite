@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Web Development with HTML and CSS</title>
+		<link href="Hinz_Mod12_2.css" type="text/css" rel="stylesheet">
+		<meta name= "description" content="JavaScript Exercise, Part 4">
+		<meta name= "class" content="CSD 340 Web Development with HTML and CSS">
+		<meta name= "student" content="Liz Hinz">
+		<meta name= "assignment" content="Module 12.2 Assignment">	
+			
+		<style>
+		
+		h1 {
+		text-align: center;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-weight: bold;
+		}
+		.myDiv3{
+		margin-top: 60%;
+		}
+	
+		</style>
+	</head>
+	<body>
+		<h1>Assignment 12.2: JavaScript - Part 4</h1>
+		
+	<div class="container">
+
+			<div class="box">
+				<h2>Top 10 Favorite Books</h2>
+				<div class="button-container">
+  	  				<button onclick="topToBottomFunction()">Top to Bottom</button>
+  	  				<button onclick="bottomToTopFunction()">Bottom to Top</button>
+  	  			</div>
+  				<div id="displayBooks"></div>
+			</div>
+
+		<div class="box2">
+			<ul>
+				<h3>5 Things I've Learned Since the Course Started</h3>
+				<li>How to create HTML files</li>
+				<li>How to create CSS files</li>
+				<li>How to link HTML and CSS files together</li>
+				<li>How to add color through CSS </li>
+				<li>How to create a webpage</li>
+			</ul>
+		</div>
+	</div>
+  		
+	<div class="myDiv3">
+		<h5><a href="index.html">Back to landing page</a></h5>
+		</div>
+	
+		<script>
+    		const top10Books = [
+    			"The Perks of Being a Wallflower",
+    			"Looking for Alaska", 
+    			"It", 
+    			"Gone Girl", 
+    			"The Great Gatsby", 
+    			"Pride and Prejudice",
+    			"Game of Thrones: A Song of Ice and Fire",
+    			"Game of Thrones: A Clash of Kings",
+    			"Game of Thrones: A Storm of Swords", 
+    			"The Final Girl Support Group"
+    		];
+    		// display function
+    		function displayBooks(books){
+    			let displayDiv = document.getElementById("displayBooks");
+    			displayDiv.innerHTML = "";
+    				
+    			let ol = document.createElement("ol");
+    			books.forEach(book => {
+    				let li = document.createElement("li");
+    				li.textContent = book;
+    				ol.appendChild(li);
+    			});
+    			displayDiv.appendChild(ol);
+    		}
+    	
+    		function topToBottomFunction() {
+				displayBooks(sortedBooks);			
+    		}
+    		
+    		function bottomToTopFunction() {
+				const reversedBooks = [...top10Books.slice(0, 9).reverse(), top10Books[9]];
+ 				displayBooks(reversedBooks);
+			}
+			window.addEventListener("DOMContentLoaded", () => displayBooks(top10Books));
+    	</script>
+	</body>
+</html>
