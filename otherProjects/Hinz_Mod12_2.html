@@ -80,12 +80,11 @@
     		}
     	
     		function topToBottomFunction() {
-				displayBooks(sortedBooks);			
+				displayBooks(top10Books);			
     		}
     		
     		function bottomToTopFunction() {
-				const reversedBooks = [...top10Books.slice(0, 9).reverse(), top10Books[9]];
- 				displayBooks(reversedBooks);
+ 				displayBooks(top10Books.slice().reverse());
 			}
 			window.addEventListener("DOMContentLoaded", () => displayBooks(top10Books));
     	</script>
