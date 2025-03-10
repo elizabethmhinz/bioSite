@@ -53,7 +53,7 @@
 		</div>
 	
 		<script>
-    		const top10Books = [
+    		const orderedBooks = [
     			"The Perks of Being a Wallflower",
     			"Looking for Alaska", 
     			"It", 
@@ -80,13 +80,13 @@
     		}
     	
     		function topToBottomFunction() {
-				displayBooks(top10Books);			
+				displayBooks(orderedBooks);			
     		}
     		
     		function bottomToTopFunction() {
- 				displayBooks(top10Books.slice().reverse());
+ 				displayBooks([...orderedBooks].reverse());
 			}
-			window.addEventListener("DOMContentLoaded", () => displayBooks(top10Books));
+			window.addEventListener("DOMContentLoaded", () => displayBooks(orderedBooks));
     	</script>
 	</body>
 </html>
